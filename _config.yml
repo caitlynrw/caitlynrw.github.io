@@ -24,10 +24,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   I post random things here from silly Doctor Who reviews, to PCBs, and my pseudo-research articles. ^^
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://caitlynrw.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+show_excerpts: true
+
+timezone: Australia/Adelaide
 
 author:
   name: Caitlyn Williams (she/her)
-  email: "pasc0106@flinders.edu.au"
+  email: "cait.rose2604@gmail.com"
 
 # Build settings
 # theme: minima
@@ -44,6 +47,12 @@ minima:
   social_links:
     - { platform: github, user_url: "https://github.com/caitlynrw" }
     - { platform: mastodon, user_url: "https://tech.lgbt/@darkmagicsauce" }
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      excerpt_separator: <!--more-->
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
